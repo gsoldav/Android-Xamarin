@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="250dp"
+    android:id="@+id/layoutMainMenuItm">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/layoutSecondMenuItm"
+        android:background="@color/itm_mnu"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="2"
+            android:id="@+id/layoutRow">
+        <!--  ************************************************************************************************************************************************************************************
+                                                                       Riga 1
+      ************************************************************************************************************************************************************************************ -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/layoutHeadRow1">
+            <!-- Macchina -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/linearLayoutMacchina">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="64dp"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/linearLayoutChkSelected"
+                        android:gravity="center">
+                        <TsFirst.SupportClass.FirstCheckBox
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:button="@drawable/checkbox"
+                            android:id="@+id/chkSelected" />
+                    </LinearLayout>
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="center"
+                        android:background="@android:color/black"
+                        android:layout_width="0.2dp"
+                        android:layout_height="fill_parent" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:id="@+id/lblMacchinaContainer">
+                        <TextView
+                            android:text="TO02"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/lblMacchinaCod"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/itm_titleMedium" />
+                        <TextView
+                            android:text="Macchina"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/lblMacchinaDesc"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="top"
+                            android:textSize="@dimen/itm_subtitleLarge"
+                            android:maxLines="2"
+                            android:ellipsize="end" />
+                    </LinearLayout>
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="center"
+                        android:background="@android:color/black"
+                        android:layout_width="0.2dp"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            <!-- Articolo -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/linearLayoutArticolo">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:id="@+id/lblMacchinaContainer">
+                        <TextView
+                            android:text="0000"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/lblArticoloCod"
+                            android:layout_height="fill_parent"
+                            android:layout_width="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="top"
+                            android:textSize="@dimen/itm_subtitleLarge"
+                            android:ellipsize="end"
+                            android:maxLines="2" />
+                        <TextView
+                            android:text="Articolo"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/lblArticoloDesc"
+                            android:layout_height="fill_parent"
+                            android:layout_width="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="top"
+                            android:textSize="@dimen/itm_subtitleLarge"
+                            android:maxLines="2"
+                            android:ellipsize="end" />
+                    </LinearLayout>
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="center"
+                        android:background="@android:color/black"
+                        android:layout_width="0.2dp"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            <!-- Fine / Sospensione -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="128dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/linearLayoutLottoFase">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/linearLayoutChkSelected"
+                        android:gravity="center">
+                        <TsFirst.SupportClass.FirstCheckBox
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:button="@drawable/checkbox3"
+                            android:id="@+id/chkFine"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="center"
+                        android:background="@android:color/black"
+                        android:layout_width="0.2dp"
+                        android:layout_height="fill_parent" />
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/lblSospEmpty"
+                        android:paddingLeft="5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="center"
+                        android:background="@android:color/black"
+                        android:layout_width="0.2dp"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            <!-- Quantità buona-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/itm_enabled_cell"
+                    android:id="@+id/linearLayoutQuantitàProdotta"
+                    android:layout_weight="1">
+                    <EditText
+                        android:inputType="number"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/txtQtaProdotta"
+                        android:gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="@dimen/itm_titleLarge" />
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="center"
+                        android:background="@android:color/black"
+                        android:layout_width="0.2dp"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            <!-- Stampa -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="210dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/linearLayoutStampa"
+                    android:background="@color/itm_enabled_cell">
+                <!-- <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/lblPzIncCas"
+                        android:paddingLeft="5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical" />-->
+                    <EditText
+                        android:inputType="number"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/txtCopie"
+                        android:gravity="right|center_vertical"
+                        android:textSize="@dimen/itm_titleLarge"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="64dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/linearLayoutChkSelected"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp">
+                        <TsFirst.SupportClass.FirstCheckBox
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:button="@drawable/checkbox"
+                            android:id="@+id/chkPrint" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        <!-- Separatore riga tabella -->
+            <TextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:background="@android:color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp" />
+        <!--  ************************************************************************************************************************************************************************************
+                                                                       Intestazione Tabella (riga 2) 
+      ************************************************************************************************************************************************************************************ -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/layoutHeadRow2">
+            <!-- Lotto e fase -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/linearLayoutLottoFase">
+                    <TextView
+                        android:text="0000000000/000"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:paddingLeft="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/txtLottoFase"
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/itm_titleMedium"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="center"
+                        android:background="@android:color/black"
+                        android:layout_width="0.2dp"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            <!-- Lavorazione -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/linearLayoutLavorazione">
+                    <TextView
+                        android:text="Lavorazione"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/lblLavorazione"
+                        android:paddingLeft="5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/itm_titleMedium"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="center"
+                        android:background="@android:color/black"
+                        android:layout_width="0.2dp"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            <!-- Fine / Sospensione -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="128dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/linearLayoutLottoFase">
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/lblFineEmpty"
+                        android:paddingLeft="5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="center"
+                        android:background="@android:color/black"
+                        android:layout_width="0.2dp"
+                        android:layout_height="fill_parent" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/linearLayoutChkSelected"
+                        android:gravity="center">
+                        <TsFirst.SupportClass.FirstCheckBox
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:button="@drawable/checkbox3"
+                            android:id="@+id/chkSosp" />
+                    </LinearLayout>
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="center"
+                        android:background="@android:color/black"
+                        android:layout_width="0.2dp"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            <!-- Quantità scarto-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/linearLayoutQuantita">
+                    <TextView
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:paddingLeft="5dp"
+                        android:id="@+id/txtQtaScartataTot"
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:textSize="@dimen/itm_titleLarge"
+                        android:paddingRight="5dp" />
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="center"
+                        android:background="@android:color/Transparent"
+                        android:layout_width="0.2dp"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            <!-- Bottone Scarti -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="210dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/linearLayoutScarto"
+                    android:layout_alignParentRight="true">
+                    <ImageButton
+                        android:id="@+id/btnScartato"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/IcMenu_PR_SCA_LAV" />
+                </LinearLayout>
+            </LinearLayout>
+        <!-- fine layoutRow -->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
